@@ -6,7 +6,6 @@ import java.time.LocalDateTime;
 
 @Data
 public class UserResponse {
-    public class User {
         private String id;
         private String email;
         private String password;
@@ -15,4 +14,4 @@ public class UserResponse {
         private LocalDateTime createdAt;
         private LocalDateTime updatedAt;
     }
-}
+

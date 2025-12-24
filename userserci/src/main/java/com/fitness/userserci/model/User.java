@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDateTime;
 
@@ -32,4 +31,14 @@ public class User {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+    public LocalDateTime setUpdatedAt() {
+        this.updatedAt = updatedAt;
+        return null;
+    }
+
+    public LocalDateTime setCreatedAt() {
+        this.createdAt = createdAt;
+        return null;
+    }
 }
